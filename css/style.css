@@ -28,13 +28,18 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.4rem 7%;
-	background-color: rgba(1, 1, 1, 0.8);
-	border-bottom: 1px solid #513c28;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 9999;
+}
+
+.navbar.header__sticky {
+	/* background-color: rgba(1, 1, 1, 0.8); */
+	/* border-bottom: 1px solid #513c28; */
+	background-color: #000;
+	transition: all .5s ease-in;
 }
 
 .navbar .navbar-brand {
@@ -366,11 +371,16 @@ footer .copyright {
 		font-size: 62.5%;
 	}
 
+	.navbar {
+		background-color: #000;
+	}
+
 	.navbar .navbar-nav {
 		position: absolute;
 		top: 100%;
 		right: -100%;
-		background-color: #fff;
+		/* background-color: #fff; */
+		background-color: #000;
 		width: 30rem;
 		height: 100vh;
 		transition: 0.3s;
@@ -385,7 +395,8 @@ footer .copyright {
 	}
 
 	.navbar .navbar-nav a {
-		color: var(--background);
+		/* color: var(--background); */
+		color: #fff;
 		display: block;
 		margin: 1.5rem;
 		padding: 0.5rem;

@@ -10,3 +10,6 @@ document.addEventListener('click', function(e) {
 		navbarNav.classList.remove('show');
 	}
 });
+
+// Sticky header
+jQuery(document).ready(function(a){a(window).scroll(function(){a(document).scrollTop()>50?a(".navbar").addClass("header__sticky"):a(".navbar").removeClass("header__sticky")})})

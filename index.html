@@ -11,6 +11,8 @@
 
 	<script src="https://unpkg.com/feather-icons"></script>
 
+	<link rel="stylesheet" href="css/wowcss/animate.css">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -34,7 +36,7 @@
 	</nav>
 
 	<section class="hero" id="home">
-		<main class="content">
+		<main class="content wow slideInLeft" data-wow-duration="2s">
 			<h1>Eh! Kita <span>Ngopi</span> Yukk</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, animi?
@@ -44,13 +46,13 @@
 	</section>
 
 	<section class="about" id="about">
-		<h2><span>Tentang</span> Kami</h2>
+		<h2 class="wow bounceInUp" data-wow-duration="2s"><span>Tentang</span> Kami</h2>
 
 		<div class="row">
-			<div class="about-image">
+			<div class="about-image wow slideInLeft" data-wow-duration="2s">
 				<img src="img/tentang-kami.jpeg" alt="Tentang Kami">
 			</div>
-			<div class="content">
+			<div class="content wow slideInRight" data-wow-duration="2s">
 				<h3>Ngopi Di Tempat Kami</h3>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Laborum, consequatur necessitatibus molestiae ipsam! Voluptate, error.
@@ -63,34 +65,34 @@
 	</section>
 
 	<section class="menu" id="menu">
-		<h2><span>Menu</span> Kami</h2>
-		<p>
+		<h2 class="wow bounceInDown"><span>Menu</span> Kami</h2>
+		<p class="wow bounceInUp">
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum possimus, ducimus excepturi beatae velit qui.
 		</p>
 
 		<div class="row">
 			<div class="card-menu">
-				<img class="card-menu-img" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
+				<img class="card-menu-img wow rotateIn" data-wow-duration="3s" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
 				<h3 class="card-menu-title">- Latte -</h3>
 				<p class="card-menu-price">IDR 20K</p>
 			</div>
 			<div class="card-menu">
-				<img class="card-menu-img" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
+				<img class="card-menu-img wow rotateIn" data-wow-duration="3s" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
 				<h3 class="card-menu-title">- Latte -</h3>
 				<p class="card-menu-price">IDR 20K</p>
 			</div>
 			<div class="card-menu">
-				<img class="card-menu-img" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
+				<img class="card-menu-img wow rotateIn" data-wow-duration="3s" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
 				<h3 class="card-menu-title">- Latte -</h3>
 				<p class="card-menu-price">IDR 20K</p>
 			</div>
 			<div class="card-menu">
-				<img class="card-menu-img" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
+				<img class="card-menu-img wow rotateIn" data-wow-duration="3s" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
 				<h3 class="card-menu-title">- Latte -</h3>
 				<p class="card-menu-price">IDR 20K</p>
 			</div>
 			<div class="card-menu">
-				<img class="card-menu-img" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
+				<img class="card-menu-img wow rotateIn" data-wow-duration="3s" src="img/menu/coffee-latte.jpg" alt="Coffee Latte">
 				<h3 class="card-menu-title">- Latte -</h3>
 				<p class="card-menu-price">IDR 20K</p>
 			</div>
@@ -152,8 +154,15 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
 	<script>
 	  feather.replace()
+	</script>
+
+	<script src="js/wowjs/wow.min.js"></script>
+	<script>
+		new WOW().init();
 	</script>
 
 	<script src="js/script.js"></script>
